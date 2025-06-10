@@ -7,17 +7,8 @@ def call(String backendStaging) {
         remote.identityFile = '/var/lib/jenkins/.ssh/id_rsa'
         remote.allowAnyHosts = true
 
-        try {
                 stage('Push Docker image') {
                     echo "hai ${nameservice}"
                 }
             }
-        } catch (Exception e) {
-            currentBuild.result = 'FAILURE'
-            echo 'Build failed!'
-            throw e
-        }
-
-        echo 'Build succeeded!'
-    }
 }
