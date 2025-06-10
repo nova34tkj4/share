@@ -8,8 +8,6 @@ def call(String backendStaging) {
         remote.allowAnyHosts = true
 
         try {
-            withCredentials([string(credentialsId: 'key-github', variable: 'SSH_KEY')]) {
-
                 stage('Push Docker image') {
                     echo "hai ${nameservice}"
                 }
