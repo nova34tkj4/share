@@ -8,7 +8,7 @@ def call(String backendStaging) {
         remote.allowAnyHosts = true
 
                 stage('Push Docker image') {
-                    echo "hassssi ${nameservice}"
+                    echo "hassssssi ${nameservice}"
                 }
             }
 }
