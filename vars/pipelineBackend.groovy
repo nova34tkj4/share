@@ -11,7 +11,7 @@ def call(String backendStaging) {
             withCredentials([string(credentialsId: 'key-github', variable: 'SSH_KEY')]) {
 
                 stage('Push Docker image') {
-                    sh "echo ${nameservice}"
+                    echo "hai ${nameservice}"
                 }
             }
         } catch (Exception e) {
